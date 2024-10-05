@@ -41,7 +41,7 @@ public class OpenCvScannerImpl implements DocScannerService {
     }
 
     @Override
-    public BufferedImage scan(DocScanDevice docScanDevice) {
+    public BufferedImage scan(DocScanDevice docScanDevice, String deviceType) {
         int width = 980;
         int height = 540;
 

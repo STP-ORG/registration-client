@@ -1,9 +1,6 @@
 package io.mosip.registration.ref.morena;
 
-import eu.gnome.morena.Camera;
-import eu.gnome.morena.Device;
-import eu.gnome.morena.Manager;
-import eu.gnome.morena.Scanner;
+import eu.gnome.morena.*;
 import io.mosip.registration.api.docscanner.DeviceType;
 import io.mosip.registration.api.docscanner.DocScannerService;
 import io.mosip.registration.api.docscanner.dto.DocScanDevice;
