@@ -853,7 +853,7 @@ public class GenericController<uiFieldDTO> extends BaseController {
 					}
 				}
 				//Hide introducer grouping for adults
-				if(groupEntry.getKey().equals("Introducer")) {
+				if(groupEntry.getKey().equals("Introducer") || groupEntry.getKey().equals("Introdutor")) {
 					groupFlowPane.visibleProperty().bind(Bindings.or(
 							groupFlowPane.getChildren().get(1).visibleProperty(),
 							groupFlowPane.getChildren().get(2).visibleProperty())
