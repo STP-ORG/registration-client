@@ -305,20 +305,20 @@ public class TextFieldFxControl extends FxControl {
 			imagesHBox.getStyleClass().add(RegistrationConstants.ICONS_HBOX);
 			imagesHBox.setPrefWidth(10);
 
-			VirtualKeyboard keyBoard = new VirtualKeyboard(langCode);
-			keyBoard.changeControlOfKeyboard(textField);
-			
-			ImageView keyBoardImgView = getKeyBoardImage();
-			keyBoardImgView.setId(langCode);
-			keyBoardImgView.visibleProperty().bind(textField.visibleProperty());
-			keyBoardImgView.managedProperty().bind(textField.visibleProperty());
-
-			if (keyBoardImgView != null) {
-				keyBoardImgView.setOnMouseClicked((event) -> {
-					setFocusOnField(event, keyBoard, langCode, textField);
-				});
-			}
-			imagesHBox.getChildren().add(keyBoardImgView);
+//			VirtualKeyboard keyBoard = new VirtualKeyboard(langCode);
+//			keyBoard.changeControlOfKeyboard(textField);
+//
+//			ImageView keyBoardImgView = getKeyBoardImage();
+//			keyBoardImgView.setId(langCode);
+//			keyBoardImgView.visibleProperty().bind(textField.visibleProperty());
+//			keyBoardImgView.managedProperty().bind(textField.visibleProperty());
+//
+//			if (keyBoardImgView != null) {
+//				keyBoardImgView.setOnMouseClicked((event) -> {
+//					setFocusOnField(event, keyBoard, langCode, textField);
+//				});
+//			}
+//			imagesHBox.getChildren().add(keyBoardImgView);
 			textFieldHBox.getChildren().add(imagesHBox);
 		}
 
